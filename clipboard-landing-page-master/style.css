@@ -1,0 +1,416 @@
+:root{
+    --StrongCyan: hsl(171, 66%, 44%);
+    --StrongCyan1: hsl(171, 35%, 61%);
+    --LightBlue: hsl(233, 100%, 69%);
+    --LightBlue1: hsl(233, 100%, 75%);
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --Grayishblue: hsl(197, 20%, 93%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+   background: url(./images/bg-header-desktop.png);
+   background-repeat: no-repeat;
+   height: 100vh;
+   color: var(--DarkGrayishBlue);
+   font-family: 'Bai Jamjuree', sans-serif;
+   font-size: 18px;
+   }
+
+   header{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 3em 13em 3em 13em;
+    text-align: center;
+    
+
+   }
+
+   .logo img{
+    
+    width: 100px;
+    margin-bottom: 3em;
+    margin-top: 2em;
+    
+   }
+
+   .download{
+    
+    margin-bottom: 2em;
+   }
+
+   
+   .download p{
+ 
+    margin: 0 3.5em;
+    padding: 1em;
+
+    
+   }
+
+
+   
+   button{
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 3em;
+   
+    
+   
+    
+   }
+   .btn1{
+    background-color: var(--StrongCyan);
+    
+   }
+
+   .btn1:hover{
+    background-color: var(--StrongCyan1);
+   }
+
+   .btn2{
+    background-color: var(--LightBlue);
+   }
+
+   .btn2:hover{
+    background-color: var(--LightBlue1);
+   }
+
+
+   .text1{
+    display: flex;
+    flex-direction: column;
+    padding: 3em 13em 3em 13em;
+    text-align: center;
+   }
+
+   .text1 h2{
+   margin-bottom: 1em;
+   }
+
+
+   .text2{
+    display: flex;
+    column-gap: 4em;
+    margin-top: 4em;
+    
+   }
+
+   .desk{
+    position: relative;
+   }
+
+   .description{
+  
+    left: 40em;
+
+   }
+
+   .desc{
+    
+    text-align: left;
+    margin-top: 4em;
+    padding-right: 5em;
+    
+   }
+
+   .desc h3{
+ 
+    font-weight: 600;
+   }
+
+
+   .text3{
+
+    margin-top: 4em;
+    
+   }
+
+   .container{
+    position: relative;
+    left: 250px;
+    margin-top: 5em;
+   margin-bottom: 3em;
+    width: 700px;
+    text-align: center;
+  
+   }
+
+   .container h3{
+    margin-bottom: 1em;
+   }
+
+   .device {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+   }
+
+   
+   
+   .text-i{
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 7em;
+    padding-right: 7em;
+    margin-bottom: 9em;
+ 
+    
+   }
+
+   .super{
+    grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+  margin-bottom: 3em;
+   }
+
+   .super p{
+    margin-top: 1em;
+    font-size: .7rem;
+   }
+
+   .info{
+   
+    font-size: .7rem;
+    text-align: center;
+   }
+   
+   .info img{
+    
+    display: block;
+    margin: 1em auto 2em auto;
+   
+   }
+
+   .info p{
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 1em;
+   }
+
+
+   .logos{
+    display: flex;
+    justify-content: center;
+    gap: 7em;
+    margin-top: 4em;
+    
+    margin-bottom: 8em;
+   }
+   
+  
+
+   .grid-contact img{
+    width: 100%;
+    
+   }
+  
+   .download2{
+    
+    text-align: center;
+    width: 700px;
+    margin: 0 auto 4em auto;
+   }
+
+   .download2 h2{
+    margin-bottom: .5em;
+   }
+   
+
+   .logos img{
+    width: 100px;
+   
+   }
+
+
+   footer{
+    background-color: var(--Grayishblue);
+   }
+
+
+   .grid-contacts{
+   display: grid;
+   grid-template-columns: repeat(6,1fr);
+    font-size: .8em;
+    padding: 2em 2em;
+   }
+
+   .gridcontact1{
+   grid-row: 1/3;
+    padding-left: 2em;
+   
+   }
+
+   .gridcontact1 img{
+    width: 40px;
+    margin-left: 3em;
+    
+    }
+
+    .gridcontact3{
+       grid-row: 2/3;
+        
+    }
+
+.gridcontact5{
+grid-row: 2/3;
+}
+
+.social{
+    margin-top: 2em;
+    padding-left: 4em;
+    display: flex;
+    gap: 1em;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    body{
+       width: 100%;
+        }
+
+    header{
+    
+        
+        padding: 0;
+        text-align: center;
+        margin: 0 auto;
+    
+       }
+
+     .download{
+        padding: 20px 59px;
+     }
+     .download p{
+        margin: 0;
+       
+     }
+  
+     .logo img{
+      
+      width: 100px;
+      
+      margin: 3em auto;
+     }
+
+     
+
+     
+   .text1{
+    
+    padding: 3em 4em 3em 4em;
+    text-align: center;
+    margin-left: 20px;
+   }
+
+
+
+   .text2{
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 40px;
+    margin-left: 40px;
+   
+    
+   }
+
+   .container {
+    position: relative;
+    left: 84px;
+    margin-top: 5em;
+    margin-bottom: 3em;
+   width: 300px;
+    text-align: center;
+}
+
+
+.text-i {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 70px;
+    margin-bottom: 9em;
+}
+.text-i .info {
+    margin-bottom: 30px;
+}
+
+   .desc {
+    text-align: center; 
+    padding-right: 0px;
+
+   }
+
+   .desc h3{
+    margin-bottom: 20px;
+   }
+
+   .desk{
+    width: 80%;
+    margin-left: 40px;
+    
+   }
+
+   .device img {
+   width: 400px;
+   
+   }
+
+   .logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+    margin-top: -6em;
+    margin-bottom: 8em;
+    text-align: center;
+    margin-left: 176px;
+    margin-right: 119px;
+}
+
+.logos img{
+    width: 129px;
+}
+
+.download2{
+    padding: 20px 59px;
+    width: 322px;
+ }
+
+ .gridcontact1 img {
+    width: 40px;
+ margin-left: 0;
+ padding-bottom: 20px;
+ padding-left: 0;
+ margin-right: 10px;
+}
+
+
+ .grid-contacts{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 30px;
+   gap: 25px;
+ }
+
+ .social{
+    padding-left: 0;
+ }
+  }
